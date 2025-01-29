@@ -1,0 +1,14 @@
+Youtube-DLP (MP3)
+"C:\Misc\yt-dlp.exe" "$VIDEOURL$" -i -x --audio-format mp3 --audio-quality 0 -o C:/Misc/ytdl/%(title)s.%(ext)s --embed-thumbnail --add-metadata
+
+YT-DLP (Main / Best)
+"C:\Misc\yt-dlp.exe" -i --add-metadata -f bestvideo+bestaudio -o C:/Misc/ytdl/%(title)s.%(ext)s
+
+YT-DLP (+ Subs)
+"C:\Misc\yt-dlp.exe" -i --add-metadata -f bestvideo+bestaudio --sub-lang en --write-sub --sub-format vtt --convert-subtitles srt --write-auto-sub -o C:/Misc/ytdl/%(title)s.%(ext)s
+
+YT-DLP (Plain)
+"C:\Misc\yt-dlp.exe" -i --add-metadata -f best -o C:/Misc/ytdl/%(title)s.%(ext)s
+
+Youtube-DL (Login/Age Pass)
+"C:\Misc\youtube-dl.exe" -u username@gmail.com -p Passxxxxxxxxx -i --add-metadata -f bestvideo+bestaudio -o C:/Misc/ytdl/%(title)s.%(ext)s
