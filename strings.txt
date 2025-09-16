@@ -12,3 +12,18 @@ YT-DLP (Plain)
 
 Youtube-DL (Login/Age Pass)
 "C:\Misc\youtube-dl.exe" -u username@gmail.com -p Passxxxxxxxxx -i --add-metadata -f bestvideo+bestaudio -o C:/Misc/ytdl/%(title)s.%(ext)s
+
+YT-DLP (1080p cap)
+"C:\Misc\yt-dlp.exe" -i --add-metadata -f bestvideo[height<=1080]+bestaudio/best -o C:/Misc/ytdl/%(title)s.%(ext)s
+
+YT-DLP (Tor)
+"C:\Misc\yt-dlp.exe" -i --add-metadata -f best -o C:/Misc/ytdl/%(title)s.%(ext)s --proxy socks5://localhost:9150
+
+YT-DLP (Plain) (cookies)
+"C:\Misc\yt-dlp.exe" "$VIDEOURL$" --cookies-from-browser firefox -i --add-metadata -f best -o C:/Misc/ytdl/%(title)s.%(ext)s
+
+YT-DLP Cookie Dump
+"C:\Misc\yt-dlp.exe" --cookies-from-browser firefox --cookies "C:\Misc\cookies.txt"
+
+YT-DLP to MPC
+"C:\Misc\yt-dlp.exe" "$VIDEOURL$" -i --add-metadata -f bestvideo+bestaudio -o - | "C:\Program Files\MPC-HC\mpc-hc64.exe" -
