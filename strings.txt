@@ -1,29 +1,29 @@
 Youtube-DLP (MP3)
-"C:\Misc\yt-dlp.exe" "$VIDEOURL$" -i -x --audio-format mp3 --audio-quality 0 -o C:/Misc/ytdl/%(title)s.%(ext)s --embed-thumbnail --add-metadata
+"C:\Misc\yt-dlp.bat" "$VIDEOURL$" -i -x --audio-format mp3 --audio-quality 0 -o C:/Misc/ytdl/%(title)s.%(ext)s --embed-thumbnail --add-metadata
 
 YT-DLP (Main / Best)
-"C:\Misc\yt-dlp.exe" -i --add-metadata -f bestvideo+bestaudio -o C:/Misc/ytdl/%(title)s.%(ext)s
+"C:\Misc\yt-dlp.bat" -i --add-metadata -f bestvideo+bestaudio -o C:/Misc/ytdl/%(title)s.%(ext)s
 
 YT-DLP (+ Subs)
-"C:\Misc\yt-dlp.exe" -i --add-metadata -f bestvideo+bestaudio --sub-lang en --write-sub --sub-format vtt --convert-subtitles srt --write-auto-sub -o C:/Misc/ytdl/%(title)s.%(ext)s
+"C:\Misc\yt-dlp.bat" -i --add-metadata -f bestvideo+bestaudio --sub-lang en --write-sub --sub-format vtt --convert-subtitles srt --write-auto-sub -o C:/Misc/ytdl/%(title)s.%(ext)s
 
 YT-DLP (Plain)
-"C:\Misc\yt-dlp.exe" -i --add-metadata -f best -o C:/Misc/ytdl/%(title)s.%(ext)s
+"C:\Misc\yt-dlp.bat" -i --add-metadata -f best -o C:/Misc/ytdl/%(title)s.%(ext)s
 
 Youtube-DL (Login/Age Pass)
-"C:\Misc\youtube-dl.exe" -u username@gmail.com -p Passxxxxxxxxx -i --add-metadata -f bestvideo+bestaudio -o C:/Misc/ytdl/%(title)s.%(ext)s
+"C:\Misc\youtube-dl.bat" -u username@gmail.com -p Passxxxxxxxxx -i --add-metadata -f bestvideo+bestaudio -o C:/Misc/ytdl/%(title)s.%(ext)s
 
 YT-DLP (1080p cap)
-"C:\Misc\yt-dlp.exe" -i --add-metadata -f bestvideo[height<=1080]+bestaudio/best -o C:/Misc/ytdl/%(title)s.%(ext)s
+"C:\Misc\yt-dlp.bat" -i --add-metadata -f bestvideo[height<=1080]+bestaudio/best -o C:/Misc/ytdl/%(title)s.%(ext)s
 
 YT-DLP (Tor)
-"C:\Misc\yt-dlp.exe" -i --add-metadata -f best -o C:/Misc/ytdl/%(title)s.%(ext)s --proxy socks5://localhost:9150
+"C:\Misc\yt-dlp.bat" -i --add-metadata -f best -o C:/Misc/ytdl/%(title)s.%(ext)s --proxy socks5://localhost:9150
 
 YT-DLP (Plain) (cookies)
-"C:\Misc\yt-dlp.exe" "$VIDEOURL$" --cookies-from-browser firefox -i --add-metadata -f best -o C:/Misc/ytdl/%(title)s.%(ext)s
+"C:\Misc\yt-dlp.bat" "$VIDEOURL$" --cookies-from-browser firefox -i --add-metadata -f best -o C:/Misc/ytdl/%(title)s.%(ext)s
 
 YT-DLP Cookie Dump
-"C:\Misc\yt-dlp.exe" --cookies-from-browser firefox --cookies "C:\Misc\cookies.txt"
+"C:\Misc\yt-dlp.bat" --cookies-from-browser firefox --cookies "C:\Misc\cookies.txt"
 
 YT-DLP to MPC
-"C:\Misc\yt-dlp.exe" "$VIDEOURL$" -i --add-metadata -f bestvideo+bestaudio -o - | "C:\Program Files\MPC-HC\mpc-hc64.exe" -
+"C:\Misc\yt-dlp.bat" "$VIDEOURL$" -i --add-metadata -f bestvideo+bestaudio -o - | "C:\Program Files\MPC-HC\mpc-hc64.exe" -
